@@ -40,7 +40,6 @@
 <script>
 import VuegramPost from "./VuegramPost";
 import FilterType from "./FilterType";
-
 export default {
   name: "PhoneBody",
   props: {

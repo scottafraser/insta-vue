@@ -9,10 +9,8 @@
     ></div>
   </div>
 </template>
-
 <script>
 import EventBus from "../event-bus.js";
-
 export default {
   name: "FilterType",
   props: {
@@ -21,12 +19,13 @@ export default {
   },
   methods: {
     selectFilter() {
-      EventBus.$emit("filter-selected", { filter: this.filter.name });
+      EventBus.$emit(
+        "filter-selected", { filter: this.filter.name }
+      );
     }
   }
 };
 </script>
-
 <style lang="scss" src="../styles/filter-type.scss">
 // Styles from stylesheet
 </style>
